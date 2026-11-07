@@ -69,21 +69,21 @@
 
         up {
             display-name = "UP";
-            // | BTCLR | BT1 | BT2 |   | BT3 |   |   |   |   |   |   |   |   | RGB_UG RGB_TOG | RGB_UG RGB_BRD | RGB_UG RGB_BRI | RGB_UG RGB_EFF |   |   | PREV | NEXT |   |   |
-            // |       |     |     |   |     |   |   |   |   |   |   |   |   |                | RGB_UG RGB_HUD | RGB_UG RGB_HUI |                |   |   | PLAY |      |   |   |
-            // |       |     |     |   |     |   |   |   |   |   |   |   |   |                |                | RGB_UG RGB_SAD | RGB_UG RGB_SAI |   |   |      |      |   |   |
-            // |       |     |     |   |     |   |   |   |   |   |   |   |   |                |                |                |                |       |      |      |   |
-            // |       |     |     |   |     |   |   |   |   |   |   |   |   |                |                |                |                |   |   |      |      |   |   |
-            // |       |     |     |   |                 |   |               |                |                |                |                |   |   |      |      |   |
-            //                                                                                                                                       |   |
+            // | BTCLR         | BT1 | BT2 |   | BT3 |   |   |   |   |   |   |   |   | RGB_UG RGB_TOG | RGB_UG RGB_BRD | RGB_UG RGB_BRI | RGB_UG RGB_EFF |   |   | PREV | NEXT |   |   |
+            // | STUDIO_UNLOCK |     |     |   |     |   |   |   |   |   |   |   |   |                | RGB_UG RGB_HUD | RGB_UG RGB_HUI |                |   |   | PLAY |      |   |   |
+            // |               |     |     |   |     |   |   |   |   |   |   |   |   |                |                | RGB_UG RGB_SAD | RGB_UG RGB_SAI |   |   |      |      |   |   |
+            // |               |     |     |   |     |   |   |   |   |   |   |   |   |                |                |                |                |       |      |      |   |
+            // |               |     |     |   |     |   |   |   |   |   |   |   |   |                |                |                |                |   |   |      |      |   |   |
+            // |               |     |     |   |                 |   |               |                |                |                |                |   |   |      |      |   |
+            //                                                                                                                                               |   |
             bindings = <
-                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2  &trans  &trans          &trans  &trans  &trans          &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans          &kp C_PREV  &kp C_NEXT          &trans
-                &trans      &trans        &trans                &trans        &trans  &trans          &trans  &trans  &trans          &trans  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI                   &trans          &kp C_PP    &trans      &trans  &trans
-                &trans                    &trans        &trans  &trans                &trans  &trans  &trans          &trans  &trans  &trans                   &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans          &trans      &trans      &trans  &trans
-                &trans                    &trans        &trans                &trans  &trans  &trans          &trans  &trans  &trans          &trans           &trans           &trans           &trans                           &trans      &trans      &trans
-                &trans      &trans                      &trans  &trans        &trans          &trans  &trans  &trans          &trans  &trans  &trans                            &trans           &trans           &trans          &trans      &trans      &trans  &trans
-                &trans      &trans                      &trans                                        &trans                                  &trans           &trans           &trans           &trans           &trans          &trans                  &trans
-                                                                                                                                                                                                                          &trans
+                &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2  &trans  &trans          &trans  &trans  &trans          &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans          &kp C_PREV  &kp C_NEXT          &trans
+                &studio_unlock  &trans        &trans                &trans        &trans  &trans          &trans  &trans  &trans          &trans  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_HUI                   &trans          &kp C_PP    &trans      &trans  &trans
+                &trans                        &trans        &trans  &trans                &trans  &trans  &trans          &trans  &trans  &trans                   &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans          &trans      &trans      &trans  &trans
+                &trans                        &trans        &trans                &trans  &trans  &trans          &trans  &trans  &trans          &trans           &trans           &trans           &trans                           &trans      &trans      &trans
+                &trans          &trans                      &trans  &trans        &trans          &trans  &trans  &trans          &trans  &trans  &trans                            &trans           &trans           &trans          &trans      &trans      &trans  &trans
+                &trans          &trans                      &trans                                        &trans                                  &trans           &trans           &trans           &trans           &trans          &trans                  &trans
+                                                                                                                                                                                                                              &trans
             >;
         };
 
